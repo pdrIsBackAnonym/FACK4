@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+ 
+public class Robo{
+    
+    String name = "ATM-2000";
+    float weight = 250;
+    float maxSpeed = 50;
+    float maximumLoadWeight = 1000;
+    String tractionType = "Running Machine";
+    float positionX = 20;
+    float positionY = 40;
+    public void move (float x, float y){
+        positionX = x;
+        positionY = y;
+    }
+    public void printStatus(){
+        System.out.println("--------RoboATM1=====" + name);
+        System.out.println("Weight: " + weight);
+        System.out.println("Max Speed: " + maxSpeed);
+        System.out.println("Maximum Load Weight: " + maximumLoadWeight);
+        System.out.println("Traction Type: " + tractionType);
+        System.out.println("X Position: " + positionX);
+        System.out.println("Y position: " + positionY);
+        System.out.println("----------");
+    }
+    
+    public static void main(String[]args){
+        Robo objRobo = new Robo();
+        objRobo.printStatus();
+        objRobo.move(60,90);
+        objRobo.printStatus();
+        objRobo.move(45,55);
+        objRobo.printStatus();
+    }
+}
