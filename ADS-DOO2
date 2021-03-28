@@ -1,0 +1,35 @@
+public class App{
+    public static void main (String[]args){
+        Robo objRobo = new Robo();
+        objRobo.move(60,55);
+        objRobo.move(55);
+    }
+    public class Robo{
+        float positionX;
+        float positionY;
+        final String name;
+        final float weight;
+        final float maximumSpeed = 5;
+        final float maximumLoadWeight = 20;
+        final String tractionType = "esteira";
+    }
+    public Robo(String name, float weight){
+        this.name = name;
+        this.weight = weight;
+        this.positionX = 50;
+        this.positionY = 60;
+    }
+    public Robo(String name, float weight, float posX, float posY){
+        this.name = name;
+        this.weight = weight;
+        this.positionX = posX;
+        this.positionY = posY;
+    }
+    public void move(float weight){
+        this.positionY = pos;
+    }
+    public void move(float posX, float posY){
+        this.positionX = posX;
+        this.positionY = posY;
+    }
+}
