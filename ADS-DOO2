@@ -11,7 +11,7 @@ public class App{
         final float weight;
         final float maximumSpeed = 5;
         final float maximumLoadWeight = 20;
-        final String tractionType = "esteira";
+        final String tractionType = "Running Machine";
     }
     public Robo(String name, float weight){
         this.name = name;
